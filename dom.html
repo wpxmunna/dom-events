@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Exploring DOM</h1>
+            <article>
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, odit itaque ipsum commodi laudantium fugit architecto maiores nesciunt nisi iure? Consequatur natus culpa ipsum maxime officia voluptatibus pariatur unde error.</p>
+            </article>
+            <article class="special" id="first-one">
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Quas, aliquam provident similique vel dolorum accusamus fuga atque, perspiciatis error ratione deserunt esse vero reprehenderit dignissimos assumenda. Velit possimus tenetur id reprehenderit? Consequuntur assumenda, iste omnis quod nobis molestiae?</p>
+            </article>
+            <article class="special">
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Ea impedit neque eligendi. Non in iusto ad sunt deleniti. Voluptas quas voluptatibus est placeat molestias nostrum culpa quis? At atque iusto neque nobis itaque? Vel quibusdam quis ullam vitae.</p>
+            </article>
+
+        </section>
+    </main>
+    <script>
+        const articleOne = document.getElementById('first-one');
+        const newPara = document.createElement('p');
+        newPara.innerHTML = 'I am from javascript';
+        articleOne.appendChild(newPara);
+
+    </script>
+</body>
+</html>
